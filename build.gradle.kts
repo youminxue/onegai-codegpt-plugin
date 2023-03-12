@@ -11,7 +11,10 @@ repositories {
     mavenCentral()
 }
 dependencies {
-    testImplementation("org.junit.jupiter:junit-jupiter:5.8.1")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.9.2")
+    testImplementation("org.junit.jupiter:junit-jupiter-engine:5.9.2")
+    testImplementation("org.mockito:mockito-junit-jupiter:5.2.0")
+    testImplementation("org.mockito.kotlin:mockito-kotlin:4.1.0")
 }
 
 // Configure Gradle IntelliJ Plugin
@@ -22,8 +25,6 @@ intellij {
 
     plugins.set(listOf(/* Plugin Dependencies */))
 }
-
-
 
 tasks {
     // Set the JVM compatibility versions

@@ -1,13 +1,11 @@
 package com.snacks.onegai.codegpt.plugin.ui.settings
 
 import com.intellij.ui.TitledSeparator
-import com.snacks.onegai.codegpt.plugin.ui.settings.SettingsPanel
 import org.hamcrest.CoreMatchers.containsString
 import org.junit.Assert.assertThat
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 import javax.swing.JLabel
-import javax.swing.JPanel
 import javax.swing.JTextField
 
 class SettingsPanelTest {
@@ -30,25 +28,23 @@ class SettingsPanelTest {
         assertEquals("GhatGPT Settings", titledSeparator.text)
 
         // Check that the third component is a panel with the expected components
-        val urlPanel = components[1] as JPanel
-
-        val urlLabel = components[2] as JLabel
+        val urlLabel = components[1] as JLabel
         assertEquals("URL:", urlLabel.text)
 
-        val urlTextField = components[3] as JTextField
+        val urlTextField = components[2] as JTextField
         assertEquals(url, urlTextField.text)
 
-        val urlCommentLabel = components[4] as JLabel
+        val urlCommentLabel = components[3] as JLabel
         assertThat(urlCommentLabel.text, containsString("The URL of the OpenAI API endpoint."))
 
         // Check that the fifth component is a panel with the expected components
-        val apiKeyLabel = components[5] as JLabel
+        val apiKeyLabel = components[4] as JLabel
         assertEquals("API key:", apiKeyLabel.text)
 
-        val apiKeyTextField = components[6] as JTextField
+        val apiKeyTextField = components[5] as JTextField
         assertEquals(apiKey, apiKeyTextField.text)
 
-        val apiCommentLabel = components[7] as JLabel
+        val apiCommentLabel = components[6] as JLabel
         assertThat(apiCommentLabel.text, containsString("You can find your Secret API key in your"))
     }
 

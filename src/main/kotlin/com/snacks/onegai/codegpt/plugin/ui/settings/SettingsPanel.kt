@@ -19,12 +19,12 @@ class SettingsPanel(url: String, apiKey: String) {
     fun getMainPanel(): JPanel {
         return panel {
             titledRow("GhatGPT Settings") {
-            }
-            row("URL:") {
-                urlTextField().comment("The URL of the OpenAI API endpoint.")
-            }
-            row("API key:") {
-                apiKeyField().comment("You can find your Secret API key in your <a href=\"https://platform.openai.com/account/api-keys\">User settings</a>.")
+                row("URL:") {
+                    urlTextField().comment("The URL of the OpenAI API endpoint.")
+                }
+                row("API key:") {
+                    apiKeyField().comment("You can find your Secret API key in your <a href=\"https://platform.openai.com/account/api-keys\">User settings</a>.")
+                }
             }
         }
     }

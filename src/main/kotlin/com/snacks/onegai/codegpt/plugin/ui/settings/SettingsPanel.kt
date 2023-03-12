@@ -1,4 +1,4 @@
-package com.snacks.onegai.codegpt.ui.settings
+package com.snacks.onegai.codegpt.plugin.ui.settings
 
 import com.intellij.ui.layout.panel
 import javax.swing.JPanel

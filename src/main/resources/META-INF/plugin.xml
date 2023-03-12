@@ -29,10 +29,10 @@ The plugin could include a feature that analyzes the selected unit tests and gen
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
     <extensions defaultExtensionNs="com.intellij">
         <applicationConfigurable parentId="tools"
-                                 instance="com.snacks.onegai.codegpt.ui.settings.internal.SettingsConfigurable"
+                                 instance="com.snacks.onegai.codegpt.plugin.ui.settings.internal.SettingsConfigurable"
                                  id="org.intellij.sdk.settings.AppSettingsConfigurable"
                                  displayName="Onegai CodeGPT"/>
-        <applicationService serviceImplementation="com.snacks.onegai.codegpt.ui.settings.internal.SettingsState"/>
+        <applicationService serviceImplementation="com.snacks.onegai.codegpt.plugin.ui.settings.internal.SettingsState"/>
 
     </extensions>
 </idea-plugin>

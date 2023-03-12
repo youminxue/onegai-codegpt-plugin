@@ -1,7 +1,7 @@
-package com.snacks.onegai.codegpt.ui.settings.internal
+package com.snacks.onegai.codegpt.plugin.ui.settings.internal
 
 import com.intellij.openapi.options.Configurable
-import com.snacks.onegai.codegpt.ui.settings.SettingsPanel
+import com.snacks.onegai.codegpt.plugin.ui.settings.SettingsPanel
 import javax.swing.JComponent
 
 class SettingsConfigurable : Configurable {

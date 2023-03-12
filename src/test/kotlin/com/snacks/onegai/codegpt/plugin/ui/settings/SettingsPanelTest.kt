@@ -1,6 +1,7 @@
-package com.snacks.onegai.codegpt.ui.settings
+package com.snacks.onegai.codegpt.plugin.ui.settings
 
 import com.intellij.ui.TitledSeparator
+import com.snacks.onegai.codegpt.plugin.ui.settings.SettingsPanel
 import org.hamcrest.CoreMatchers.containsString
 import org.junit.Assert.assertThat
 import org.junit.jupiter.api.Assertions.assertEquals
